@@ -53,7 +53,7 @@ const loginUser = async (req, res) => {
       },
       process.env.JWTPASSWORD,
       {
-        expiresIn: 3600000,
+        expiresIn:"1h",
       }
     );
     return res.status(200).json({ accessToken });
